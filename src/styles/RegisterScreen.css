@@ -1,0 +1,159 @@
+.register-screen {
+  width: 375px;
+  height: 812px;
+  background: #ffffff;
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-screen__background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.register-screen__ellipse {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(107, 201, 194, 0.45);
+  border-radius: 50%;
+}
+
+.register-screen__ellipse--1 {
+  top: -37px;
+  left: -46px;
+}
+
+.register-screen__ellipse--2 {
+  top: -85px;
+  left: 54px;
+}
+
+.register-screen__content {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 60px 25px 40px;
+}
+
+.register-screen__header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.register-screen__title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.register-screen__subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.register-screen__form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-input {
+  width: 100%;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  border-radius: 100px;
+  padding: 0 30px;
+  font-family: 'Poppins',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.form-input::placeholder {
+  color: #000000;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #63FFEA;
+}
+
+.register-screen__button {
+  width: 100%;
+  height: 60px;
+  background: #63FFEA;
+  border-radius: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  color: #121212;
+  transition: all 0.3s ease;
+}
+
+.register-screen__button:hover {
+  background: #4de6d1;
+  transform: translateY(-2px);
+}
+
+.register-screen__button:active {
+  transform: translateY(0);
+}
+
+.register-screen__footer {
+  text-align: center;
+}
+
+.register-screen__footer-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.register-screen__link {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #121212;
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.register-screen__link:hover {
+  color: #63FFEA;
+}
+
+@media (max-width: 768px) {
+  .register-screen {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
